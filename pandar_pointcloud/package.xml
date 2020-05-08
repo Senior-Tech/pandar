@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>pandar_pointcloud</name>
+    <version>1.0.0</version>
+    <description>
+        Point cloud conversions for Pandar 3D LIDARs.
+    </description>
+    <maintainer email="guolindong@gmail.com">Guo Lindong</maintainer>
+    <author>Guo Lindong</author>
+    <license>BSD</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>roslint</build_depend>
+
+    <depend>angles</depend>
+    <depend>nodelet</depend>
+    <depend>roscpp</depend>
+    <depend>roslib</depend>
+    <depend>sensor_msgs</depend>
+    <depend>tf</depend>
+    <depend>pandar_driver</depend>
+    <depend>pandar_msgs</depend>
+    <depend>yaml-cpp</depend>
+    <depend>dynamic_reconfigure</depend>
+    <depend>diagnostic_updater</depend>
+    <depend>eigen</depend>
+
+
+    <test_depend>rosunit</test_depend>
+    <test_depend>roslaunch</test_depend>
+    <test_depend>rostest</test_depend>
+    <test_depend>tf2_ros</test_depend>
+
+    <export>
+        <nodelet plugin="${prefix}/nodelets.xml"/>
+    </export>
+</package>

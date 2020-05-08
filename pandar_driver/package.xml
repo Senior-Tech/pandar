@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>pandar_driver</name>
+    <version>1.0.0</version>
+    <description>
+        ROS device driver for Pandar40 series 3D LIDARs.
+    </description>
+    <maintainer email="guolindong@gmail.com">Guo Lindong</maintainer>
+    <author>Guo Lindong</author>
+    <license>BSD</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>roslint</build_depend>
+
+    <depend>diagnostic_updater</depend>
+    <depend>dynamic_reconfigure</depend>
+    <depend>libpcap</depend>
+    <depend>nodelet</depend>
+    <depend>roscpp</depend>
+    <depend>tf</depend>
+    <depend>pandar_msgs</depend>
+
+    <test_depend>roslaunch</test_depend>
+    <test_depend>rostest</test_depend>
+
+    <export>
+        <nodelet plugin="${prefix}/nodelet_pandar.xml"/>
+    </export>
+</package>
